@@ -1,0 +1,63 @@
+##Full code used for pre-processing of StackOverflow `Posts.xml`
+##Date: April 2021
+##Main Author: Maria Kamouyiaros (GitHub ID: kamouyiaraki)
+##Secondary Authors: Dr Thomas Cornulier, Rosie Baillie (GitHub ID: RosieBaillie)
+
+## Purpose
+#This is not a functional script - it's main purpose to track what data filtering steps were taken. 
+#This uses a combination of bash scripting and R and can be run from a bash command line. 
+#If you are on a Windows machine and would like to replicate this with the dowloaded dataset you can install Git for Windows and that will include a bash command line interface (https://gitforwindows.org/)
+
+
+
+###In Git
+#set working directory to where data is saved
+cd ./Reprothon_StackOverflow_Data
+
+### Remove lines that do not have a match to specific strings: 
+	#PostTypeId="1" (only the parent post)
+	#&lt;r&gt (r tag) (only ones with the tag <r>)
+	#AcceptedAnswerId (only ones with an accepted answer)
+
+sed -i '/&lt;r&gt/!d' Posts.xml  #took approximately 6 mins to run
+sed -i '/PostTypeId="1"/!d' Posts.xml 
+sed -i '/AcceptedAnswerId/!d' Posts.xml
+
+
+## Add a xml header
+sed -i '1s/^/<?xml version="1.0" encoding="utf-8"?>\n<posts>\n> /' Posts.xml
+	#Final file = 480Mb
+
+
+#### In R
+
+### Add posts tag to the end of the xml
+write("\n</posts>", file= Posts.xml, append = T)
+
+
+### Parse xml into R
+
+library(XML)
+library(plyr)
+library(jsonlite)
+library(purrr)
+library(data.table)  
+
+
+  xD <- xmlParse("Posts.xml")  #parse in xml (this requires both xml header and tag)
+  xL <- xmlToList(xD) #turns into a list to be able to start turning into a dataframe)
+  names(xL)<- 1:length(names(xL)) #424101 entries   (names by default are "row" as that's what each line starts with, changed to numbers)
+  xLtest<-lapply(names(xL), function(x) data.frame(as.list(xL[[x]])))  #output "data.list", "data.frame"
+  	#this took a very long time and the final list was 1.2GB)
+  
+  xDF<- rbindlist(xLtest, fill=TRUE, use.names = T)  #fill = T means that any rows that do not have a value for a variable will be filled with an NA
+  xDF<- as.data.frame(xDF)  #make sure it's only "data.frame"
+  str(xDF)  #check to make sure everything loaded
+  #note they are all classed as "chr"
+  dim (xDF) #correct
+  class(xDF) #everything is a character
+  
+  keep.cols<-c("Id","PostTypeId","AcceptedAnswerId", "CreationDate", "LastActivityDate", "Title", "Tags")
+  xDF2<- xDF[, keep.cols]
+  str(xDF2)
+  write.table(xDF2, file= "Posts_reduced.txt", sep = "\t")
