@@ -31,7 +31,7 @@ The session will be open for all contributors to pop in and out in their own tim
 #### Requirements
 
 - good WiFi or some way of connecting to the Internet
-- R version 4.0+ (if you need to update R you can do that following the guide [here](https://uvastatlab.github.io/phdplus/installR.html#:~:text=finish%20the%20installation.-,From%20within%20RStudio%2C%20go%20to%20Help%20%3E%20Check%20for%20Updates%20to,)%2C%20and%20click%20Install%20Updates))
+- R version 4.0+ (if you need to update R you can do that following the guide [here](https://uvastatlab.github.io/phdplus/installR.html)
 - ability to install packages in R
 - familiarity with StackOverlow posts
 
