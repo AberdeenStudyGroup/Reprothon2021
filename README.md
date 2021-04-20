@@ -1,4 +1,4 @@
-# [Aberdeen Study Group Reprothon 2021](https://aberdeenatudygroup.github.io/Reprothon2021/ )
+# [Aberdeen Study Group Reprothon 2021](https://aberdeenstudygroup.github.io/Reprothon2021/ )
 
 Hackathon on reproducibility and longevity of R code for the Aberdeen Study Group - 2021
 
