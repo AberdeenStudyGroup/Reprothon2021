@@ -9,4 +9,4 @@ navbar:
       href: README.md
    
 
-theme: jekyll-theme-yat
+theme: flatly
