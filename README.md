@@ -1,9 +1,6 @@
-# [Aberdeen Study Group Reprothon 2021](https://aberdeenstudygroup.github.io/Reprothon2021/ )
+# [Aberdeen Study Group Reprothon 2021](https://aberdeenstudygroup.github.io/Reprothon2021/)
 
 Hackathon on reproducibility and longevity of R code for the Aberdeen Study Group - 2021
-
-<insert image here>
-
 
 #### What is it all about?
 
@@ -11,7 +8,7 @@ Reproducibility is important across all research, whether this is open access ar
 <br>
 So what can we do maximise the longevity, and therefore reproducibility, of our code? That is what the ASG Reprothon 2021 aims to answer! Collating data on code reproducibility for the first time, the Reprothon will provide robust evidence on what factors are determining the longevity of code. 
 <br>
-At the end of this we hope to share the results through a blog post with the aim to provide researchers with guidelines to ensure their code remains usable beyond publishing.
+At the end of this we hope to share the results with the aim to provide researchers with guidelines to ensure their code remains usable beyond publishing.
 
 ### How to contribute
 
