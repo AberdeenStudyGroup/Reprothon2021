@@ -2,7 +2,7 @@
 
 Hackathon on reproducibility and longevity of R code for the Aberdeen Study Group - 2021
 
-#### What is it all about?
+### What is it all about?
 
 Reproducibility is important across all research, whether this is open access articles, repeatable results or giving access to code and data used for a paper. However, if you have ever tried to rerun old code and it has failed, you are not alone! 
 <br>
@@ -36,7 +36,7 @@ The session will be open for all contributors to pop in and out in their own tim
 *Optional*: A Github Account (this is free). You will still be able to access all the infromation on Github, but if you want to propose any changes or bring up any issues 
 
 
-#### Your role as a `Contributor`
+### Your role as a `Contributor`
 
 Contributors are volunteers who offer their time and expertise to the hackathon project. All contributions are central to the project as they move work forward by leaps and bounds! 
 
@@ -51,7 +51,7 @@ As a contributor you might:
 You should be aware that all contributions to the project will fall under the project's [license](https://github.com/AberdeenStudyGroup/Reprothon2021/blob/main/LICENSE) and can be reused, remixed and shared according to that license. 
 
 
-#### Sharing your story
+### Sharing your story
 
 Part of the “open” nature of the hackathon is connecting and sharing our work, processes an experiences. During the event, we encourage you to post updates– both in the MS Teams chat, and on social media.
 You can follow the `#reprothon2021` and `#hackers2021` hashtags on Twitter to see what others are up to.
