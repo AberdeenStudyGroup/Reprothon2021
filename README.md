@@ -6,7 +6,7 @@ Hackathon on reproducibility and longevity of R code for the Aberdeen Study Grou
 ### Who we are
 
 The [Aberdeen Study Group](https://aberdeenstudygroup.github.io/studyGroup/) is a [Mozilla Science Lab](https://www.mozillascience.org/) Study Group.  
-We are a PhD student run group, based at the University of Aberdeen. We organise fun, informal meetups open to **everyone** to share skills, stories and ideas on using code for research. The goal is to create a friendly, no-pressure environment where people can share their work, ask for help on a coding problem, and learn and work together with their peers.
+We are based at the University of Aberdeen, but we organise fun, informal meetups open to **everyone, anywhere** to share skills, stories and ideas on using code for research. The goal is to create a friendly, no-pressure environment where people can share their work, ask for help on a coding problem, and learn and work together with their peers.
 
 ### What is it all about?
 
