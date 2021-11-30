@@ -26,9 +26,9 @@ The Reprothon is ASG’s very own hackathon! A hackathon is an event where lots 
 
 **Where**: MSTeams
 
-**When**: in person 9th June 2021, 1600-1800 BST, and will remain live until *TBC*
+**When**: 9th December 2021, 3:00 - 5:00pm BST
 
-If you want to get involved, we have a quick [registration form](LINK) to complete, which when completed will provide you with your unique Reprothon ID. 
+If you want to get involved, we have a quick [registration form](https://mailchimp.com/) to complete, which when completed will provide you with your unique Reprothon ID. 
 <br>
 <br>
 The session will be open for all contributors to pop in and out in their own time and will provide a space to chat with other contributors, but also watch real-time as the project moves forward. 
@@ -38,7 +38,7 @@ The session will be open for all contributors to pop in and out in their own tim
 This event is open to anyone interested! However, as it will be focused on testing code there are a few requirements you might need to consider:
 
 - good WiFi or some way of connecting to the Internet
-- R version 4.0+ (if you need to update R you can do that following the guide [here](https://uvastatlab.github.io/phdplus/installR.html) )
+- R version 4.0+ (if you need to update R you can do that following the guide [here](https://www.r-project.org/)
 - ability to install packages in R
 - familiarity with StackOverlow posts
 
